@@ -20,3 +20,30 @@
 // }
 
 
+// Guile Throw https://onlinegiftools.com/images/examples-onlinegiftools/sonic-boom.gif
+
+    // https://www.fightersgeneration.com/characters/charlie-sonicshell.gif
+
+
+const pOneAttack = () => {
+    let ship = document.querySelector('.ussr')
+        // create New Action
+            let newImg = document.createElement('img')
+                newImg.setAttribute('src','https://onlinegiftools.com/images/examples-onlinegiftools/sonic-boom.gif')
+                newImg.setAttribute('class', 'ussr');
+        ship.replaceWith(newImg)
+        
+        ship.classList.toggle('pOneAttack')
+}
+
+const absorbDamage = (alienId) => {
+
+    let victim = document.querySelector(alienId)
+    victim.innerHTML = score - 100
+}
+
+const fireShot = () => {
+    let laser = prompt("Which Position Would You Like To Fire At ?")
+
+}
+
